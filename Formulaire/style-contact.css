@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Permanent Marker", cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobilenav {
+  display: none;
+}
+
+main::before {
+  content: "";
+  background-image: url(../images-png/bg-logo.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+main {
+  flex: 1;
+  width: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+}
+
+
+textarea,
+input {
+  z-index: 1;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #e5af70;
+}
+
+.spaced {
+  justify-content: space-between;
+}
+.bg-orange {
+  background-color: #f28607;
+}
+
+.c-orange {
+  color: #f28607;
+}
+.bg-lgray {
+  background-color: #d9d9d9;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-logo {
+  position: relative;
+}
+
+.txt-white {
+  color: aliceblue;
+}
+
+.center {
+  align-items: center;
+}
+.txt-black {
+  color: black;
+}
+.centered {
+  justify-content: center;
+}
+.txt-center {
+  text-align: center;
+}
+.d-flex {
+  display: flex;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+.h-30 {
+  height: 15px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* structure */
+
+nav {
+  /* height: 100%; */
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.logocontainer {
+  width: vw;
+  height: 12.5vh;
+  padding: 10px;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* barre recherche */
+
+.search {
+  padding: 10px 20px;
+}
+.textinput::placeholder {
+  color: black;
+  opacity: 1;
+  padding: 5px;
+  padding-left: 20px;
+}
+.textinput {
+  /* transform: translatex(-100%); */
+  border-radius: 50px;
+  height: 5vh;
+  width: 25vw;
+  position: relative;
+  padding: 1vw;
+  
+}
+
+.searchicon {
+  transform: translatex(-200%);
+  z-index: 1;
+}
+
+a:hover {
+  color: aliceblue;
+  text-decoration: underline overline aliceblue;
+  font-size: 1.3em;
+}
+/* fin barre de recherche */
+
+/* debut langue */
+#langue {
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  color: black;
+  padding: 5px 12px 5px 15px;
+}
+
+.langue {
+  padding-right: 10px;
+}
+/* dropdown button */
+ 
+.dropbtn {
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius:50%;
+  border: solid 2px black;
+  width: 50px;
+  height: 50px;
+  background-color: #f28607;
+}
+.dropbtn::before{
+content: "\f078";
+font-family: "Font Awesome 6 Free";
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 1em;
+     font-weight: 600;
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 140px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align:center;
+  border-radius:2%;
+  font-size: large;
+  transform: translatex(-30%);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #f28607;}
+
+.show {display: block;}
+
+
+/* debut form */
+.contact-title {
+  font-size: 46px;
+  margin-bottom: 30px;
+  -webkit-text-stroke: 0.3px #f28607;
+}
+
+.form-center {
+  padding: 0 15% 0 15%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  color: black;
+}
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: black;
+}
+
+.img-contact {
+  position: absolute;
+  transform: translateX(95%);
+  width: 30vw;
+  height: 20vw;
+}
+.send-button{
+width: 50%;
+padding: 4%;
+margin-top: 10%;
+border-radius: 30px;
+background-color: #f28607;
+cursor: pointer;
+border: none;
+font-size: larger;
+box-shadow: 5px 5px 5px 5px #6c6c6c;
+}
+
+.send-button:active{
+  color: white;
+  width: 40%;
+  padding: 2%;
+}
+
+
+
+/* debut footer */
+
+footer {
+  background-color: black;
+  bottom: 0;
+  height: 10%;
+}
+
+.border-right {
+  border-right: 2px solid;
+}
+.footertxt {
+  font-size: 0.7em;
+}
+
+i:hover,
+.footertxt:hover {
+  color: #f28607;
+  font-size: 1em;
+  
+}
+
+/* debut responsive mobile */
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+    z-index: 0;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  main::before {
+    content: "";
+    background: url(../images-png/bg-logo.png) center/ 100% no-repeat ;
+    background-color: #6c6c6c;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+.login, .navigation, #langue {
+  display: none;
+}
+
+.logocontainer {
+  order: 2;
+}
+
+.search {
+  order: 1;
+  padding-right: 0;
+}
+
+.textinput {
+  height: 30px;
+  width: 150px;
+  font-size: large;
+  padding-left: 10px;
+}
+
+.logocontainer{
+  width: 80px;
+  height: 80px;
+}
+.logo{
+  width: 100%;
+}
+.mobilhead{
+  width: 100vw;
+}
+/*permet de le faire apparaitre alors qu'il est en display:none par defaut */
+.mobilenav{
+  display: block;
+}
+/* responsive main */
+.footertxt {
+  font-size: 0.5em;
+}
+
+.img-contact {
+  bottom: 0;
+z-index: 2;
+width: 200px;
+height: 150px;
+transform: translatex(50%);
+}
+
+}
+
+  /* debut responsive tablette */
+/* regarder doc breakpoints   992*/
+@media screen and (max-width: 1200px) and (min-width: 768px){
+  .login, .navigation, #langue {
+    display: none;
+  }
+
+  .logocontainer {
+    order: 2;
+  }
+  
+  .search {
+    order: 1;
+    padding-right: 0;
+  }
+
+  .textinput {
+    border-radius: 50px;
+    width: 250px;
+    font-size: large;
+    padding-left: 10px;
+  }
+  .searchicon {
+     transform: translate(-200%);
+  }
+
+  .logocontainer{
+    width: 100px;
+    height: 100px;
+  }
+  .logo{
+    width: 100%;
+    height: 100%;
+  }
+  .mobilhead{
+    width: 100vw;
+    height: 100px;
+ gap: 20%;
+  }
+/*permet de le faire apparaitre alors qu'l esr en display:none par defaut */
+  .mobilenav{
+    display: block;
+  }
+  
+}
+
+  

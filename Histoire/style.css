@@ -1,0 +1,325 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Permanent Marker", cursive;
+}
+
+.mobilenav {
+  display: none;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images-png/bg_comics_en.png) ;
+  background-size: cover;
+}
+
+ main{
+  background-color: #d9d9d9;
+  flex: 1;
+  padding: 1% 0;
+  width:auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  z-index: 0;
+}
+.spaced {
+  justify-content: space-between;
+}
+.bg-orange {
+  background-color: #f28607;
+}
+
+.c-orange{
+ color: #f28607;
+}
+.bg-lgray {
+  background-color: #d9d9d9;
+}
+.txt-white{
+  color: aliceblue;
+}
+
+.center {
+  align-items: center;
+}
+.txt-black {
+  color: black;
+}
+.centered{
+      justify-content: center;
+}
+.txt-center{
+  text-align: center;
+}
+.d-flex {
+  display: flex;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.relative{
+  position: relative;
+}
+
+/* structure */
+nav{
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  z-index: 1;
+ 
+}
+
+
+.logocontainer{
+  /* width: vw;   pourquoi j'ai enlevé la taille? */
+  height: 12.5vh;
+  padding: 10px;
+}
+.logo {
+ width: 100%;
+ height: 100%;
+ object-fit:fill;
+}
+
+/* barre recherche */
+
+.search {
+  padding: 10px 20px;
+ 
+}
+.textinput::placeholder{
+  color: black;
+  opacity: 1;
+  padding: 5px;
+  padding-left: 20px;
+}
+.textinput {
+  border-radius: 50px;
+  height: 5vh;
+  width: 25vw;
+  position:relative;
+ padding: 1vw;
+  
+}
+
+.searchicon {
+ transform: translatex(-200%);
+ 
+}
+
+a:hover {
+color: aliceblue;
+text-decoration: underline overline aliceblue;
+font-size: 1.3em;
+}
+/* fin barre de recherche */
+
+
+/* debut langue */
+#langue {
+  border-radius: 20px; 
+  background-color: #d9d9d9; 
+  color: black;
+  padding: 5px 12px 5px 15px; 
+}
+
+.langue{
+  padding-right: 10px;
+}
+
+
+/* bouton dropdown */
+
+ 
+.dropbtn {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius:50%;
+    border: solid 2px black;
+    width: 50px;
+       height: 50px;
+    background-color: #f28607;
+  }
+  .dropbtn::before{
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 1em;
+       font-weight: 600;
+  
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align:center;
+    border-radius:2%;
+    font-size: large;
+    transform: translatex(-30%);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #f28607;}
+  
+  .show {display: block;}
+
+
+.history-title{
+  text-align: center;
+  -webkit-text-stroke: 0.3px #f28607;
+  font-size: 4vw;
+
+}
+.bg-before::before {
+  content: "";
+  background: url(../images-png/bg-logo.png) center / cover no-repeat;
+  width: 12vw;
+  height: 25vw;
+  opacity: 0.4;
+  position:absolute;
+ /* top: 0; */
+  z-index: -1;
+  
+}
+
+
+/* debut footer */
+
+footer{
+    background-color: black;
+    /* bottom: 0; */
+    /* height: 20%; */
+  }
+  
+  .footertxt{
+    font-size: 0.7em;
+  }
+  
+  i:hover:not(.dropdown), .footertxt:hover{
+    color: #f28607;
+    font-size: 1em;
+  }
+  
+  
+/* debut responsive mobile */
+
+@media screen and (max-width: 1200px) {
+  main{
+    background-color: unset;
+    /* unset : desactive la propriété d'avant */
+  }
+  main{
+    width:auto;
+   padding-top: 15vw;
+  }
+
+.login, .navigation, #langue {
+  display: none;
+}
+
+.logocontainer {
+  order: 2;
+}
+
+.search {
+  order: 1;
+  padding-right: 0;
+}
+
+.textinput {
+  height: 30px;
+  width: 150px;
+  font-size: large;
+  padding-left: 10px;
+}
+.searchicon {
+  font-size: 20px;
+   transform: translate(-200%);
+}
+
+.logocontainer{
+  width: 70px;
+  height: 70px;
+}
+.logo{
+  width: 100%;
+  height: 100%;
+}
+.mobilhead{
+  width: 100vw;
+  padding: 10px;
+}
+
+.mobilenav{
+  display: block;
+}
+.footertxt{
+  font-size: 0.5em;
+}
+.history-title{
+  -webkit-text-stroke: 0.3px #f28607;
+  font-size: 9vw;
+
+}
+}
+
+/* debut responsive tablette */
+/* regarder doc breakpoints   992*/
+@media screen and (max-width: 1200px) and (min-width: 768px){
+
+ .mobilhead{
+  gap: 25%;
+ }
+ main{
+ padding-top: 0vw;
+}
+}

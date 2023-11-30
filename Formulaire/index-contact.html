@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style-contact.css" />
+    <script src="../script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images-png/bg-logo.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="spaced bg-orange center txt-black d-flex">
+        <div class="navigation">
+          <ul class="d-flex">
+            <li><a class="p-10 txt-black" href="../index.html">Accueil</a></li>
+            <li><a class="p-10 txt-black" href="../Histoire/index-history.html">Histoire</a></li>
+            <li><a class="p-10 txt-black" href="../Personnages/index-perso.html">Personnages</a></li>
+            <li><a class="p-10 txt-black" href="#">Communauté</a></li>
+          </ul>
+        </div>
+
+        <div class="mobilhead centered d-flex center">
+          <div class="mobilenav">
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn" id="dropbtn"></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="../index.html">Home</a>
+                <a href="../Histoire/index-history.html">Histoire</a>
+                <a href="../Personnages/index-perso.html">Personnages</a>
+                <a href="../Formulaire/index-contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="logocontainer">
+            <a href="../index.html"
+              ><img src="../images-png/logo.png" alt="" class="logo" />
+            </a>
+          </div>
+          <div class="search">
+            <div class="searchbar center d-flex">
+              <input
+                class="textinput bg-lgray"
+                type="text"
+                placeholder="search"
+              />
+              <i class="fa fa-search searchicon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="login">
+          <ul class="d-flex">
+            <li><a class="p-10 txt-black" href="#">Se connecter</a></li>
+            <li><a class="p-10 txt-black" href="#">S'enregistrer</a></li>
+            <li><a class="p-10 txt-black" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="langue">
+          <select id="langue">
+            <option value="fr">Fr</option>
+            <option value="en">En</option>
+            <option value="en">It</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-white .bg-logo center txt-center centered">
+
+      <div class="form-center">
+      <h1 class="contact-title">Nous Contacter</h1>
+      <div class="form-container center">
+   <input type="text" placeholder="Prénom">
+   <input type="text" placeholder="Nom">
+   <input type="email" name="email" id="email" placeholder="Email">
+  <textarea name="votre message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+</div>
+<button class="send-button" type="button">Envoyer</button>
+</div>
+<img class="img-contact" src="../images-png/naruto-contact-removebg-preview.png" alt="">
+    </main>
+    <footer class="d-flex spaced center">
+      <div class="conditions p-5">
+        <div class="footertxtdiv txt-white d-flex center">
+          <p class="footertxt p-5">Conditions générales</p>
+          <div class="border-right h-30"></div>
+          <p class="footertxt p-5">Consentement global</p>
+          <div class="border-right h-30"></div>
+          <p class="footertxt p-5">Nous contacter</p>
+        </div>
+      </div>
+
+      <div class="reseaux txt-white d-flex center">
+        <p class="footertxt p-10">Suivez-nous</p>
+        <div class="border-right p-10 h-30 c-orange"></div>
+        <div class="icones d-flex">
+          <i class="fa-brands fa-instagram p-5"></i>
+          <i class="fa-brands fa-facebook-f p-5"></i>
+          <i class="fa-brands fa-twitter p-5"></i>
+          <i class="fa-brands fa-youtube p-5"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

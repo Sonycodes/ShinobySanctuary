@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personnages</title>
+    <link rel="stylesheet" href="style-perso.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../script.js"></script>
+    <link rel="icon" href="../images-png/logo.png" />
+  </head>
+  <body class="relative">
+    <header>
+      <nav class="spaced bg-orange center txt-black d-flex relative">
+        <div class="navigation">
+          <ul class="d-flex">
+            <li><a class="p-10 txt-black" href="../index.html">Accueil</a></li>
+            <li>
+              <a class="p-10 txt-black" href="../Histoire/index-history.html"
+                >Histoire</a
+              >
+            </li>
+            <li><a class="p-10 txt-black" href="#">Personnages</a></li>
+            <li><a class="p-10 txt-black" href="#">Communauté</a></li>
+          </ul>
+        </div>
+
+        <div class="mobilhead centered d-flex center">
+          <div class="mobilenav">
+            <div class="dropdown">
+              <button
+                onclick="myFunction()"
+                class="dropbtn"
+                id="dropbtn"
+              ></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="../index.html">Home</a>
+                <a href="../Histoire/index-history.html">Histoire</a>
+                <a href="#">Personnages</a>
+                <a href="../Formulaire/index-contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="logocontainer">
+            <a href="../index.html">
+              <img src="../images-png/logo.png" alt="" class="logo"
+            /></a>
+          </div>
+          <div class="search">
+            <div class="searchbar center d-flex">
+              <input
+                class="textinput bg-lgray"
+                type="text"
+                placeholder="search"
+              />
+              <i class="fa fa-search searchicon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="login">
+          <ul class="d-flex">
+            <li><a class="p-10 txt-black" href="#">Se connecter</a></li>
+            <li><a class="p-10 txt-black" href="#">S'enregistrer</a></li>
+            <li>
+              <a class="p-10 txt-black" href="../Formulaire/index-contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="langue">
+          <select id="langue">
+            <option value="fr">Fr</option>
+            <option value="en">En</option>
+            <option value="en">It</option>
+          </select>
+        </div>
+      </nav>
+      <div class="nav-banniere">
+        <img src="../images-png/baniere-perso.png" alt="" class="img-baniere" />
+      </div>
+    </header>
+    <main>
+      <div class="perso-title bg-before relative">
+        <h1 class="d-flex center centered">Personnages</h1>
+      </div>
+      <div class="presentation-perso center centered d-flex column">
+        <div class="perso 1 center centered d-flex">
+          <div class="container-pres center centered d-flex column">
+            <div class="txt">
+              <p>
+                <b>Naruto</b> Naruto Uzumaki (うずまきナルト, Uzumaki Naruto)
+                est un ninja du village caché de Konoha. Il devint le jinchûriki
+                de Kyûbi le jour de sa naissance — ce qui lui valut d'être
+                rejeté par la plupart des habitants de Konoha durant toute son
+                enfance.
+              </p>
+            </div>
+            <div class="btn-pres">
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </div>
+          <img src="../images-png/perso-1-removebg-preview.png" alt="" />
+        </div>
+
+        <div class="perso 2 center centered d-flex">
+          <img src="../images-png/perso-2-removebg-preview.png" alt="" />
+          <div class="container-pres center centered d-flex column">
+            <div class="txt">
+              <p>
+                <b>Yûgao Uzuki</b> (卯月夕顔, Uzuki Yûgao ) est une kunoichi
+                membre de l'Anbu, force secrète du village caché de Konoha. Du
+                peu qui a été vu d'elle, elle semble être une personne
+              </p>
+            </div>
+            <div class="btn-pres">
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="perso 3 center centered d-flex">
+          <div class="container-pres center centered d-flex column">
+            <div class="txt">
+              <p>
+                <b>Danzô Shimura</b> (志村ダンゾウ, Shimura Danzô) était un Chef
+                du Haut Conseil de Konoha et était le chef de la filiale
+                officieuse de l'Anbu nommée « Racine ». Il se porta également
+                candidat au poste de Sixième Hokage suite à l'invasion de Pain.
+              </p>
+            </div>
+            <div class="btn-pres">
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </div>
+          <img src="../images-png/perso.3.png" alt="" />
+        </div>
+
+        <div class="perso 4 center centered d-flex">
+          <img src="../images-png/perso-4.png" alt="" />
+          <div class="container-pres center centered d-flex column">
+            <div class="txt">
+              <p>
+                <b>Sasuke Uchiwa</b> (うちはサスケ, Uchiha Sasuke) est l'un des
+                personnages principaux de la série. Il a été initialement
+                présenté comme un protagoniste, un membre de Konoha appartenant
+                à l'Équipe Kakashi.
+              </p>
+            </div>
+            <div class="btn-pres">
+              <button class="btn-more">En savoir plus</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="d-flex spaced center">
+      <div class="conditions p-5">
+        <div class="footertxtdiv txt-white d-flex center">
+          <p class="footertxt p-5">Conditions générales</p>
+          <div class="border-right h-30"></div>
+          <p class="footertxt p-5">Consentement global</p>
+          <div class="border-right h-30"></div>
+          <p class="footertxt p-5">Nous contacter</p>
+        </div>
+      </div>
+
+      <div class="reseaux txt-white d-flex center">
+        <p class="footertxt p-10">Suivez-nous</p>
+        <div class="border-right p-10 h-30 c-orange"></div>
+        <div class="icones d-flex">
+          <i class="fa-brands fa-instagram p-5"></i>
+          <i class="fa-brands fa-facebook-f p-5"></i>
+          <i class="fa-brands fa-twitter p-5"></i>
+          <i class="fa-brands fa-youtube p-5"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

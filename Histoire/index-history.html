@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histoire</title>
+  <link rel="stylesheet" href="styles-carrousel.css">
+  <link rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet">
+      <script src="../script.js"></script>
+      <link rel="icon" href="../images-png/logo.png">
+</head>
+<body>
+
+   <header>
+      <nav class="spaced bg-orange center txt-black d-flex relative">
+        <div class="navigation">
+          <ul class="d-flex">
+            <li><a class="p-10 txt-black" href="../index.html">Accueil</a></li>
+            <li><a class="p-10 txt-black" href="#">Histoire</a></li>
+            <li><a class="p-10 txt-black" href="../Personnages/index-perso.html">Personnages</a></li>
+            <li><a class="p-10 txt-black" href="#">Communauté</a></li>
+          </ul>
+        </div>
+
+        <div class="mobilhead centered  d-flex center">
+          <div class="mobilenav">
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn" id="dropbtn"></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="../index.html">Home</a>
+                <a href="#">Histoire</a>
+                <a href="../Personnages/index-perso.html">Personnages</a>
+                <a href="../Formulaire/index-contact.html">Contact</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="logocontainer">
+            <a href="../index.html">  <img src="../images-png/logo.png" alt="" class="logo" ></a>
+          </div>
+          <div class="search">
+            <div class="searchbar center d-flex">
+              <input class="textinput bg-lgray" type="text" placeholder="search">
+              <i class="fa fa-search searchicon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="login">
+          <ul class="d-flex">
+            <li><a class="p-10 txt-black" href="#">Se connecter</a></li>
+            <li><a class="p-10 txt-black" href="#">S'enregistrer</a></li>
+            <li><a class="p-10 txt-black" href="../Formulaire/index-contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="langue">
+         
+              <select id="langue">
+                <option value="fr">Fr</option>
+                <option value="en">En</option>
+                <option value="en">It</option>
+            </select>
+        </div>
+      </nav>
+    </header>
+
+<main class="center">
+  <div class=" bg-container relative">
+     <div class="bg-before centered center d-flex">
+    <h1 class="history-title txt-center">Histoire</h1>
+  </div>
+  </div>
+ 
+  <div id="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+    <div id="slides">
+       <div class="overflow">
+          <div class="inner">
+             <div class="slide slide_1">
+                <div class="slide-content txt">
+                   <img class="img-history" src="../images-png/h1.png" alt="">
+                   <div class="slide-content_txt overflow none">
+                   <h2>Prologue</h2>
+                   <p>Naruto est un manga de Masashi Kishimoto et réalisé par Hayato Date. Le manga a été diffusé au Japon pour la première fois. Pour ce qui concerne la version papier, il compte plus de 70 millions de tomes vendus.</p>
+                   </div>
+                </div>
+             </div>
+             <div class="slide slide_2">
+                <div class="slide-content txt">
+                 <img class="img-history" src="../images-png/h4.jpg" alt="">
+                   <div class="slide-content_txt overflow none">
+                   <h2>Prologue</h2>
+                   <p>Les épisodes de Naruto arrivent en France sur Game One en 2006, ils seront également retransmis sur France 3.
+                    Naruto est l’histoire d’un jeune garçon de 12 ans au début de la série qui souhaite devenir le plus fort de tous les Hokage (ninja). Le manga est composé de 2 grandes parties, la seconde s’appelant Shippunden.Attention, si vous n’avez jamais regardé la série et que vous souhaitez tout découvrir vous-même, ne lisez pas ce qui suit.</p>
+                   </div>
+                </div>
+             </div>
+             <div class="slide slide_3">
+                <div class="slide-content txt">
+                 <img class="img-history" src="../images-png/h3.png" alt="">
+                 <div class="slide-content_txt overflow none">
+                 <h2>L’histoire de Naruto</h2>
+                 <p>L’histoire commence dans le village caché de Konoha autour d’un petit enfant orphelin Nommé Naruto Uzumaki.
+                    Trop délaissé durant toute son enfance, il essaie en vain de se faire remarquer en faisant le pitre, le clown, des bêtises, …. Il répète constamment dans de nombreux épisodes de la série :  » je serais le plus puissant de tous les Hokage « Tout ceci s’explique un peu si on remonte 12 ans en arrière c’est à dire, à la naissance de Naruto.</p>
+                 </div>
+                </div>
+
+             </div>
+             <div class="slide slide_4">
+                <div class="slide-content txt">
+                 <img class="img-history" src="../images-png/h2.png" alt="">
+                   <div class="slide-content_txt overflow none">
+                   <h2>Histoire..Suite</h2>
+                   <p> A cette époque, un démon renard à 9 queues, le Kyubi voulait détruire le village caché de Konoha. Les grands Hokagés de Konoha (les ninjas puissants) prirent la défense du village pour tenter de le sauver. Un Hokagé scella le démon renard à neuf queues dans le corps de Naruto avant de mourir.
+                    Naruto grandit sans savoir que le Kyubi est en lui.</p>
+                   </div>
+                </div>
+
+
+
+             </div>
+          </div>
+       </div>
+    </div>
+    <div id="controls">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+       <label for="slide4"></label>
+    </div>
+    <div id="bullets">
+       <label for="slide1"></label>
+       <label for="slide2"></label>
+       <label for="slide3"></label>
+       <label for="slide4"></label>
+    </div>
+ </div>   
+</main>
+<footer class="d-flex spaced center">
+  <div class="conditions p-5 ">
+    <div class="footertxtdiv txt-white d-flex center">
+      <p class="footertxt p-5">Conditions générales</p>
+             <div class="border-right h-30"></div>
+      <p class="footertxt p-5">Consentement global</p>
+             <div class="border-right  h-30"></div>
+      <p class="footertxt p-5">Nous contacter</p>
+  
+    </div>
+  </div>
+
+  <div class="reseaux txt-white d-flex center">
+    <p class="footertxt p-10">Suivez-nous</p>
+    <div class="border-right p-10 h-30 c-orange"></div>
+    <div class="icones d-flex">
+      <i class="fa-brands fa-instagram p-5"></i>
+      <i class="fa-brands fa-facebook-f p-5"></i>
+      <i class="fa-brands fa-twitter p-5"></i>
+      <i class="fa-brands fa-youtube p-5"></i>
+    </div>
+  </div>
+</footer>
+
+</body>
