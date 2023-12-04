@@ -317,10 +317,8 @@
         main{
           background-color: unset;
           /* unset : desactive la propriété d'avant */
-        }
-        main{
-          width:auto;
-         padding-top: 15vw;
+          width: 80%;
+          padding-top: 15vw
         }
       
       .login, .navigation, #langue {
@@ -366,6 +364,36 @@
       .footertxt{
         font-size: 0.5em;
       }
+      
+     .community-title{
+      font-size: 26px;
+    }
+    .content{
+      margin: 0;
+      gap: 5vw;
+    }
+   
+    .disc-container{
+      width: 70%;
+    }
+    .actualite-container{
+      width: 30%;
+    }
+    .discussion img{
+      width: 40%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .txt{
+      font-size: 16px;
+    }
+    .actualite{ 
+      padding: 5px;
+      font-size: 14px;
+    }
+    .actualite img{
+      width: 100%;
+    }
       }
       
       /* debut responsive tablette */
@@ -377,5 +405,22 @@
        }
        main{
        padding-top: 0vw;
+       width: 80%;
       }
+      }
+      @media  screen and (max-width:770px) {
+        .btn-more {
+          padding: 0.15vw 0.15vw;
+          font-size: 12px;
+        }
+        .btn-more p{
+          font-size: 12px;
+        }
+        .community-title{
+          font-size: 16px;
+          margin-bottom: 5vh;
+        }
+        .txt{
+          font-size: 6px;
+        }
       }
