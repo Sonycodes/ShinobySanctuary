@@ -341,14 +341,12 @@ i:hover:not(.dropdown),
     font-size: 20px;
     transform: translate(-200%);
   }
-
-  .logocontainer {
+  .logocontainer{
     height: 70px;
-  }
-  .logo {
-    width: 100%;
-    height: 100%;
-  }
+    }
+    .logo{
+      width: 50px;
+    }    
   .mobilhead {
     width: 100vw;
     padding: 10px;
