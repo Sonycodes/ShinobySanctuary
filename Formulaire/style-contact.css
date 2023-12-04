@@ -391,6 +391,12 @@ i:hover,
   .p-10 {
     padding: unset;
 }
+.dropdown-content {
+  min-width: 10px;
+  border-radius: 2%;
+  font-size: small;
+margin-left: 10px;
+}
 }
 
 

@@ -23,3 +23,4 @@ document.getElementById("dropbtn").onclick = function (event) {
 
 // .classlist.toggle :  si la classe "show" est présente, elle sera supprimée, sinon elle sera ajoutée. c'est js qui rajoute le show
 //  cette fonction permet d'etre utiliser sur plusieurs objets clicables
+

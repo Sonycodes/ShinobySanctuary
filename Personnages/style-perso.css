@@ -257,7 +257,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 10%; */
 }
 
 .perso-title h1 {
@@ -297,8 +296,6 @@ b {
 
 footer {
   background-color: black;
-  /* bottom: 0; */
-  /* height: 20%; */
 }
 
 .footertxt {
@@ -316,6 +313,7 @@ i:hover:not(.dropdown),
 @media screen and (max-width: 1200px) {
   main {
     background-color: #d9d9d9;
+    margin: 0 10% 0 10%;
   }
 
   .login,
@@ -345,7 +343,6 @@ i:hover:not(.dropdown),
   }
 
   .logocontainer {
-    width: 70px;
     height: 70px;
   }
   .logo {
@@ -363,19 +360,65 @@ i:hover:not(.dropdown),
   .footertxt {
     font-size: 0.5em;
   }
+
+
+  /* content */
   .perso-title {
     -webkit-text-stroke: 0.3px #f28607;
     font-size: 3vw;
-  }
-  .perso-title h1 {
     height: 20vw;
   }
-}
 
+  .perso {
+    height: 30vw;
+    margin: 4vw 0;
+  }
+  .btn-more {
+    padding: 0.5px;
+    /* font-size: 12px; */
+  font-size: (calc(100% + 1px))
+
+  }
+
+  .btn-more:hover {
+    font-size: 70%;
+  }
+  .container-pres p{
+    font-size: 10px;
+  }
+  .perso{
+    padding: 15px 0;
+  }
+
+
+  .dropdown-content a {
+}
+}
 /* debut responsive tablette */
 /* regarder doc breakpoints   992*/
 @media screen and (max-width: 1200px) and (min-width: 768px) {
   .mobilhead {
     gap: 25%;
   }
+ 
+}
+
+/* only mobile */
+@media screen and (max-width: 700px) {
+  .p-10 {
+    padding: unset;
+  }
+
+  .presentation-perso{
+    gap: 20vw;
+    padding: 10vw 0;
+     }
+
+     
+.dropdown-content {
+  min-width: 10px;
+  border-radius: 2%;
+  font-size: small;
+margin-left: 10px;
+}
 }

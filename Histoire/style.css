@@ -310,6 +310,12 @@ footer{
   font-size: 9vw;
 
 }
+.dropdown-content {
+  min-width: 10px;
+  border-radius: 2%;
+  font-size: small;
+margin-left: 10px;
+}
 }
 
 /* debut responsive tablette */
